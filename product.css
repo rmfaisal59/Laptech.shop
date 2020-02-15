@@ -1,0 +1,141 @@
+body {
+  text-align: center;
+}
+
+hr {
+  color: grey;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  width: 20%;
+  height: 3px;
+}
+
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.lead1 {
+  color: green;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.container {
+  text-align: left;
+}
+.ul-text {
+  line-height: 3;
+  margin-top: 30px;
+}
+.msi-img {
+  margin-top: 55px;
+}
+.p {
+  position: relative;
+  background-color: black;
+  font-size: 7rem;
+  color: red;
+}
+.number {
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.icons {
+  margin: 1px 4px;
+}
+
+
+
+
+
+#bottom-section {
+  margin: 50px 0px 0px 0px;
+}
+
+
+
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+.icons {
+  margin: 5px 10px;
+}
+.specs {
+  margin: 2px 10px;
+  text-align: left;
+}
+
+
+
+
+
+.td {
+  padding: 10px 100px;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+}
+
+.overflow-hidden { overflow: hidden; }
